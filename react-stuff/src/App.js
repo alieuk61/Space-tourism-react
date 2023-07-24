@@ -2,18 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import MainContentHome from './components/Main-content-home';
-import Destination from './components/Destination';
+import Destination from './components/Destinations/Destination';
+import Crew from './components/Crewmen/Crew'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+
 function App() {
+
   return (
     <div className="App">
+    <Header />
      <Routes>
-       <Route path="/Destination.jsx" element={<Destination />} />
+       <Route path="/" element={<MainContentHome/>} />
+       <Route path="/Destination" element={<Destination />} />
+       <Route path="/Crew" element={<Crew />} />
       </Routes>
 
-      <Header />
-      <MainContentHome />
     </div>
   );
 }

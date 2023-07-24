@@ -1,0 +1,101 @@
+.destination {
+    background-image: url('./background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+
+.Destination-wrapper{
+    display: flex;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 160px 100px 35px 100px;
+}
+
+.container-1{
+    width: 678px;
+    height: 465px;
+}
+
+.container-2{
+    width: 400px;
+    height: 465px;
+    color: white;
+}
+
+.btn-num{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.planets-anchortags{
+    width: 285.5px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    color: white;
+    right: 160px;
+    bottom: 438px;
+}
+
+.planetsName{
+    color: #FFF;
+    font-family: 'Bellefair';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 30px 0 0 0;
+}
+
+.planetDisContainer{
+    display: flex;
+}
+
+.planetsDescription{
+    margin-bottom: 54px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 444px;;
+}
+
+.planetDistance{
+    margin-right: 54px;
+}
+
+.travelh2{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.travelh5{
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}

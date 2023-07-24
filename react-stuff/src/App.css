@@ -3,22 +3,25 @@
   min-height: 100vh;
   height: auto;
   box-sizing: border-box;
-  background-image: url('./starter-code/assets/home/background-home-desktop.jpg');
+  /* background-image: url('./starter-code/assets/home/background-home-desktop.jpg'); */
 }
 
 .header-icon{
   align-self: center;
+  margin-left: 40px;
 }
 
 Header{
-  width: auto;
+  width: 1340px;
   height: 90px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 400px;
   padding-top: 30px;
+  position: absolute;
+  color: #ffffff;
 }
 
 .header{
@@ -38,11 +41,11 @@ Header{
   position: absolute;
   width: 473px;
   height: 3px;
-  left: 167px;
+  left: 175px;
   top: 60px;
   background-color: #ffffff;
   mix-blend-mode: normal;
-  opacity: 0.25;
+  opacity: 0.2514851987361908;
 }
 
 a{
@@ -62,13 +65,14 @@ a{
 
 .main-cont-home{
   display: flex;
-  gap: 300px;
-  padding: 100px;
+  gap: 230px;
+  padding: 180px 100px 100px 100px;
   justify-content: space-around;
+  background-image: url('./starter-code/assets/home/background-home-desktop.jpg');
 }
 
 .explore-btn{
-  border-radius: 50%;
+  border-radius: 274px;
   padding: 50px;
   width: 150px;
   height: 150px;
@@ -76,13 +80,23 @@ a{
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  margin-top: 110px;
+  margin-top: 170px;
   letter-spacing: 2px;
   font-size: 32px;
   font-family: 'Bellefair';
   font-weight: 400;
   color: #0B0D17;
 
+}
+
+.exploreh2{
+  color: #0B0D17;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
 }
 
 .pointer{
@@ -92,10 +106,11 @@ a{
 .spaceH1{
   font-size: 150px;
   letter-spacing: 5px;
-  margin: 20px 0 30px 0;
+  margin: 20px 0 24px 0;
   font-family: 'Bellefair';
   font-weight: 400;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .homepageH3{
@@ -105,14 +120,16 @@ a{
   font-family: 'Barlow Condensed';
   font-weight: 400;
   text-transform: uppercase;
+  color: white;
 }
 
 .homepagePara{
   width: 444px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 32px;
   font-family: 'Barlow';
   font-weight: 400;
+  color: #D0D6F9;
 }
 
 .hover-underline{
@@ -124,18 +141,8 @@ a{
 
 }
 
-.und1{
-  right: 600px;
+.active{
+  border-bottom: 3px solid white;
 }
 
-.und2{
-  right: 450px;
-}
 
-.und3{
-  right: 300px;
-}
-
-.und4{
-right: 140px;
-}

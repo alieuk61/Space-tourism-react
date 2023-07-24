@@ -1,0 +1,24 @@
+.crew{
+    background-image: url('./background-crew-desktop.jpg');
+    height: 100vh;
+    width: 100vw;
+}
+
+.Crew-container{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 150px;
+}
+
+.crew-info{
+    width: 512px;
+    height: 512px;
+}
+
+.crew-pictures{
+    width: 512px;
+    height: 512px;
+}

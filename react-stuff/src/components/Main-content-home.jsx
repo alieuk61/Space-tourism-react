@@ -12,7 +12,7 @@ function MainContentHome() {
 
             </div>
             <div className='explore-btn pointer'>
-                <h2>Explore</h2>
+                <h2 className='exploreh2 uppercase'>Explore</h2>
             </div>
         </div>
     )
