@@ -1,24 +1,101 @@
 .crew{
     background-image: url('./background-crew-desktop.jpg');
-    height: 100vh;
+    height: 750px;
     width: 100vw;
 }
 
+.Crew-wrapper{
+    display: flex;
+    align-items: end;
+}
+
 .Crew-container{
-    height: inherit;
+    height: 520px;
     width: inherit;
     display: flex;
     justify-content: center;
     align-items: end;
-    gap: 150px;
 }
 
 .crew-info{
-    width: 512px;
-    height: 512px;
+    width: 700px;
+    height: 550px;
+    display: grid;
+}
+
+.crewName{
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    margin-top: 15px;
+}
+
+.role{
+
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5042492151260376;
+    margin-bottom: 0;
 }
 
 .crew-pictures{
-    width: 512px;
+    width: fit-content;
     height: 512px;
+    display: flex;
+    justify-content: end;
 }
+
+.slides{
+    height: 15px;
+    width: 132px;
+    align-self: end;
+    margin-bottom: 100px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.white{
+    color: white;
+}
+
+.description{
+    width: 444px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 45px;
+}
+
+.crew-img{
+    height: inherit;
+}
+
+
+.meetCrew{
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    display: inline-flex;
+    padding-right: 0px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 50px;
+    margin-top: 38px;
+}
+

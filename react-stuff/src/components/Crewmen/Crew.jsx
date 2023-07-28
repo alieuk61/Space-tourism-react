@@ -3,29 +3,17 @@ import data from '../data.json'
 import { useState } from 'react';
 
 //we want to change pictures using data.json after a few seconds using state but how would we do it
-//have an array that contains the amount of indexes in the array (not done manually, dynamically as it would be better practice)
-//we change state of the number every few seconds by looping into the array and saving the current number in a var
-//we can then have the state to equal that current number
-//with that we can then have a dynamically changing index of the crew array after a few seconds?
+//have a dependancy, if we're hovering over the big crew-container div, we would know to have it change after a few seconds, that way it not only wouldnt cause an infinite loop, but we would be able to have something that would start and stop it
 
 function Crew(){
-    
 
-    const [slide, changeSlide] = useState(data.crew.Names)
+    let crewContainer = document.querySelector('.Crew-container');
+    let slide1 = document.querySelector('.slide1');
+    let slide2 = document.querySelector('.slide2');
+    let slide3 = document.querySelector('.slide3');
+    let slide4 = document.querySelector('.slide4');
 
-
-    // let crewNames = data.crew.Names;
-    // console.log(crewNames[0].name)
-    // let limit = crewNames.length;
-    // console.log(limit)
-    // let count = 0;
-
-    // const slideChanger = function(){
-    //     setInterval(() => {
-    //         changeSlide(crewNames[count])
-    //      }, 5000)
-    //      count == limit ? count = 0 : count++
-    // }
+    const [slide, changeSlide] = useState(data.crew.Names[0]);
 
     
     // slideChanger()
@@ -50,23 +38,60 @@ function Crew(){
     // changeSlide(crewNames[count])
 
 
+        //WE'RE WORKING ON THIS FUNCTION BELOW AS IT SEEMS LIKE ITS GOING TO WORK
+    /*
+    function isMouseOver(e){
+        // e.type == "mouseover" ? 
+        //the above literally just means 'if mouse over is active'
+    }
+    */
+
+   
+
+
+
     return(
+        
+            
+
+
         <section className="Crew-wrapper crew">
-            <div className='Crew-container'>
+            <div 
+            className='Crew-container'
+            // onMouseOver={}
+            >
+                
                 <div className='crew-info'>
-                    <h2><span className='page-no'>02</span>MEET YOUR CREW</h2>
-                    <h1 className='crewName'></h1>
+                    <h3 className='white meetCrew'><span className='page-no'>02</span>MEET YOUR CREW</h3>
+                    <h2 className='role white'>{slide.role}</h2>
+                    <h1 className='crewName white'>{slide.name}</h1>
+                    <p className='description'>{slide.bio}</p>
+                    <div className='slides'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="132" height="15" viewBox="0 0 132 15" fill="none">
+                            <circle 
+                            className='pointer'
+                            onClick={() => changeSlide(data.crew.Names[0])}
+                            cx="7.5" cy="7.5" r="7.5" fill="white" />
+                            <circle 
+                            className='pointer'
+                            onClick={() => changeSlide(data.crew.Names[1])}
+                            opacity="0.174363"
+                            cx="46.5" cy="7.5" r="7.5" fill="white" />
+                            <circle 
+                            className='pointer'
+                            onClick={() => changeSlide(data.crew.Names[2])}
+                            opacity="0.174363"
+                            cx="85.5" cy="7.5" r="7.5" fill="white" />
+                            <circle 
+                            className='pointer'
+                            onClick={() => changeSlide(data.crew.Names[3])} 
+                            opacity="0.174363" 
+                            cx="124.5" cy="7.5" r="7.5" fill="white" />
+                        </svg>
+                    </div>
                 </div>
                 <div className='crew-pictures'>
-                    <img src="" alt="" />
-                </div>
-                <div className='slides'>
-                   { [1, 2, 3, 4].map((i) => (
-                        <div
-                        key={i} //give them keys to actually distinguish each divs from others
-                        className={`slide${i} slide`} //classnames are in curcly braces when using them in js
-                        ></div>
-                   ))}
+                    <img src={slide.images.png} alt="crew" className='crew-img'/>
                 </div>
             </div>
         </section>

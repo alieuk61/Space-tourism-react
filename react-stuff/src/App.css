@@ -61,6 +61,7 @@ a{
 .homep-btn{
   font-family: 'Barlow Condensed';
   font-weight: 400;
+  line-height: 5.5;
 }
 
 .main-cont-home{
@@ -80,7 +81,7 @@ a{
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  margin-top: 170px;
+  margin-top: 120px;
   letter-spacing: 2px;
   font-size: 32px;
   font-family: 'Bellefair';
