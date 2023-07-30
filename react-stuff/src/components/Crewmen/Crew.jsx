@@ -12,6 +12,7 @@ function Crew(){
     let slide2 = document.querySelector('.slide2');
     let slide3 = document.querySelector('.slide3');
     let slide4 = document.querySelector('.slide4');
+    let allSlides = document.querySelectorAll('.slide');
 
     const [slide, changeSlide] = useState(data.crew.Names[0]);
 
@@ -69,22 +70,40 @@ function Crew(){
                     <div className='slides'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="132" height="15" viewBox="0 0 132 15" fill="none">
                             <circle 
-                            className='pointer'
-                            onClick={() => changeSlide(data.crew.Names[0])}
+                            className='pointer slide slide1'
+                            onClick={() => {
+                                changeSlide(data.crew.Names[0])
+                                { allSlides.forEach(slide => slide.style.opacity = '0.174363')}
+                                {slide1.style.opacity = '1'}
+                                //if we click this button every other button will have opacity, the button clicked will have its opacity = 0
+                            }
+                        }
                             cx="7.5" cy="7.5" r="7.5" fill="white" />
                             <circle 
-                            className='pointer'
-                            onClick={() => changeSlide(data.crew.Names[1])}
+                            className='pointer slide slide2'
+                            onClick={() => {
+                                changeSlide(data.crew.Names[1])
+                                { allSlides.forEach(slide => slide.style.opacity = '0.174363') }
+                                { slide2.style.opacity = '1' }
+                            }}
                             opacity="0.174363"
                             cx="46.5" cy="7.5" r="7.5" fill="white" />
                             <circle 
-                            className='pointer'
-                            onClick={() => changeSlide(data.crew.Names[2])}
+                            className='pointer slide slide3'
+                            onClick={() => {
+                                changeSlide(data.crew.Names[2])
+                                { allSlides.forEach(slide => slide.style.opacity = '0.174363') }
+                                { slide3.style.opacity = '1' }
+                            }}
                             opacity="0.174363"
                             cx="85.5" cy="7.5" r="7.5" fill="white" />
                             <circle 
-                            className='pointer'
-                            onClick={() => changeSlide(data.crew.Names[3])} 
+                            className='pointer slide slide4'
+                            onClick={() => {
+                                changeSlide(data.crew.Names[3])
+                                { allSlides.forEach(slide => slide.style.opacity = '0.174363') }
+                                { slide4.style.opacity = '1' }
+                            }} 
                             opacity="0.174363" 
                             cx="124.5" cy="7.5" r="7.5" fill="white" />
                         </svg>
