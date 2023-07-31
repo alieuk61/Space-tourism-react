@@ -16,6 +16,9 @@
 .container-1{
     width: 678px;
     height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .container-2{
@@ -98,4 +101,22 @@
 
 .uppercase{
     text-transform: uppercase;
+}
+
+.h3-div{
+    display: flex;
+    color: #FFF;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    display: inline-flex;
+    padding-right: 0px;
+    align-items: flex-start;
+    gap: 24px;
 }

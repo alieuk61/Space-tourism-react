@@ -1,4 +1,5 @@
 import '../App.css'
+import { NavLink } from 'react-router-dom'
 
 function MainContentHome() {
     return (
@@ -11,9 +12,11 @@ function MainContentHome() {
                     because we’ll give you a truly out of this world experience!</p>
 
             </div>
-            <div className='explore-btn pointer'>
+            <NavLink to='./Destination'>
+                <div className='explore-btn pointer'>
                 <h2 className='exploreh2 uppercase'>Explore</h2>
             </div>
+            </NavLink>
         </div>
     )
 }
